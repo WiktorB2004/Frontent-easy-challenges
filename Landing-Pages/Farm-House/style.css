@@ -1,0 +1,123 @@
+html {
+  background: url('./images/bg-image.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 18px 64px;
+}
+
+nav p.nav-title {
+  font-weight: 900;
+  font-size: 18px;
+}
+
+nav .nav-list {
+  width: 20vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .nav-list li {
+  font-size: 14px;
+  font-weight: 700;
+  color: #4b4b4b;
+}
+
+nav button.nav-btn {
+  padding: 16px 54px;
+  border-radius: 50px;
+  border: none;
+  font-weight: 900;
+  background-color: #f8f8f84b;
+  color: #000000b4;
+}
+nav button.nav-btn:hover {
+  background-color: #f8f8f898;
+  color: #000000da;
+  box-shadow: 2px 3px 1px #f8f8f86e;
+}
+
+nav p.nav-title:hover,
+nav .nav-list li:hover {
+  color: #4b4b4b50;
+  text-shadow: 2px 1px 1px #f8f8f844;
+}
+
+main {
+  padding: 60px 64px;
+  height: 500px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main h1 {
+  font-size: 80px;
+  line-height: 1.2;
+}
+
+main h1 span {
+  color: #417642;
+}
+
+main p {
+  line-height: 1.4;
+  color: #4b4b4b;
+}
+
+main .main-btns button {
+  padding: 16px 48px;
+  margin: 0 20px 0 0;
+  border-radius: 50px;
+  border: none;
+  font-weight: 700;
+}
+
+main .main-btns button.learn-more {
+  background-color: #0a210b;
+  color: #fff;
+  box-shadow: 2px 1px 3px #133d15;
+}
+
+main .main-btns button.learn-more:hover {
+  background-color: #0a210be8;
+  color: #ffffffee;
+}
+
+main .main-btns button.shop-now {
+  background-color: #fff;
+  color: #313131;
+  box-shadow: 2px 1px 3px #ffffffa8;
+}
+
+main .main-btns button.shop-now:hover {
+  background-color: #ffffffa8;
+  color: #313131cc;
+}
+
+footer {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  text-align: center;
+  color: #0004ff;
+}
+
+footer a {
+  color: #0004ff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #161affb2;
+  text-decoration: none;
+}

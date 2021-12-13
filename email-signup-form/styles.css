@@ -1,0 +1,68 @@
+:root {
+  --color-primary: #4c2982;
+  --color-secondary: #f9d170;
+  --color-bg: #f9f7f3;
+  --color-text: #252525;
+  --color-light: #f3f3f3;
+  --color-success: #067973;
+  --color-success-bg: #f5fffe;
+  --color-error: #b71540;
+  --color-error-bg: #fdeff3;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-bg);
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  padding: 100px 0;
+  color: var(--color-primary);
+  font-size: 16px;
+}
+
+#form-input {
+  margin: 8px 0;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row;
+}
+
+#form-input input {
+  flex-grow: 5;
+  border: 1px solid var(--color-primary);
+}
+
+#form-input input::placeholder {
+  color: rgba(7, 7, 7, 0.7);
+  font-weight: bold;
+  padding-left: 6px;
+  font-size: 16px;
+}
+
+#form-input button {
+  padding: 0;
+  flex-grow: 1;
+  width: 45px;
+  height: 45px;
+  border: none;
+  background-color: var(--color-secondary);
+}
+
+#form-input button:hover {
+  background-color: #ffbd23;
+}
+
+#form-input button svg {
+  fill: var(--color-primary);
+  width: 25px;
+  height: 25px;
+}
